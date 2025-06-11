@@ -29,7 +29,7 @@ export function MyForm() {
   });
   console.log({ schema });
 
-  const onSubmitHandler = (values: any) => {
+  const onSubmitHandler = (values: unknown) => {
     console.log(`Submitted`);
     console.log(values);
   };

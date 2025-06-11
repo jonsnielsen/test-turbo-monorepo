@@ -1,40 +1,39 @@
-'use client';
+// 'use client';
 
-import React from 'react';
-import { useForm, SubmitHandler } from 'react-hook-form';
-import { form1 } from '../../form';
+// import React from 'react';
+// import { useForm } from 'react-hook-form';
 
-export interface IFormInput {
-  valveSelector: string;
-  isolationValve: string;
-  minimumTemperature: number;
-  maxTemperature: number;
-  controlValve: string;
-}
+// export interface IFormInput {
+//   valveSelector: string;
+//   isolationValve: string;
+//   minimumTemperature: number;
+//   maxTemperature: number;
+//   controlValve: string;
+// }
 
-export function MyForm() {
-  const { control } = useForm<IFormInput>({
-    defaultValues: {
-      controlValve: '',
-      isolationValve: '',
-      maxTemperature: 0,
-      minimumTemperature: 0,
-      valveSelector: '',
-    },
-  });
+// export function MyForm() {
+//   const { control } = useForm<IFormInput>({
+//     defaultValues: {
+//       controlValve: '',
+//       isolationValve: '',
+//       maxTemperature: 0,
+//       minimumTemperature: 0,
+//       valveSelector: '',
+//     },
+//   });
 
-  return (
-    <form>
-      <Field control={control} name="controlValve" type="string" />
-      <InputText
-        defaultValue={field.state.value}
-        onChange={(e) => field.handleChange(e.target.value)}
-        onBlur={field.handleBlur}
-      />
-      {/* <Field control={control} type="string" /> */}
-    </form>
-  );
-}
+//   return (
+//     <form>
+//       <Field control={control} name="controlValve" type="string" />
+//       <InputText
+//         defaultValue={field.state.value}
+//         onChange={(e) => field.handleChange(e.target.value)}
+//         onBlur={field.handleBlur}
+//       />
+//       {/* <Field control={control} type="string" /> */}
+//     </form>
+//   );
+// }
 
 // export function MyForm() {
 //   const { control } = useForm<IFormInput>({

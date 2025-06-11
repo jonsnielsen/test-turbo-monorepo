@@ -2,7 +2,6 @@
 'use client';
 
 import React from 'react';
-import { InputNumber, InputText } from '../FormElements';
 import { useForm } from '@tanstack/react-form';
 
 export interface IFormInput {
@@ -14,7 +13,7 @@ export interface IFormInput {
 }
 
 export function MyForm() {
-  const { Field, state } = useForm({
+  const { Field } = useForm({
     defaultValues: {
       controlValve: '',
       isolationValve: '',
