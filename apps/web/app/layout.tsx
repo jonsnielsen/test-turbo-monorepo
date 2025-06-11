@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import { Button } from '../../../packages/ui/src/button';
 
 const a: any = 0;
 
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+        <Button>My button</Button>
       </body>
     </html>
   );
